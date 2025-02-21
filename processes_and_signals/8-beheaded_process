@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#script kills process no matter what
+kill -9 "$(pgrep -f './7-highlander')"
