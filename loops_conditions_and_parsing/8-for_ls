@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Loop through the non-hidden files in the current directory
+for file in *; do
+
+  if [[ $file == *-* ]]; then
+
+    echo "${file#*-}"
+  else
+  
+    echo "$file"
+  fi
+done
+
